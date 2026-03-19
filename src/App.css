@@ -15,5 +15,7 @@
 .btn.primary{background:linear-gradient(90deg,#b8860b,#ffd873);color:#111}
 .btn.ghost{background:transparent;border:1px solid rgba(255,216,120,0.2);color:#ffd873}
 .small{color:#cbb78a;font-size:0.9rem;margin-top:8px}
+.download{color:#ffd873;text-decoration:none;font-weight:700}
+.download:hover{text-decoration:underline}
 .details{margin-top:28px;color:#e9dfc8}
 @media(max-width:780px){.hero{flex-direction:column}.cover img{width:70%}}

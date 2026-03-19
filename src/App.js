@@ -1,7 +1,10 @@
-
 import './App.css';
 
 function App() {
+  const downloadUrl =
+    process.env.REACT_APP_DOWNLOAD_URL ||
+    'https://www.paypal.com/ncp/payment/MBDYH2EYWKPCL';
+
   return (
     <div className="App">
       <header className="App-header">
@@ -21,9 +24,17 @@ function App() {
             </ul>
             <div className="cta-row">
               <a href="#buy" className="btn primary">Buy now — $14.99</a>
-              <a href="#learn" className="btn ghost">Read sample</a>
             </div>
-            <p className="small">Paperback — fast worldwide shipping available</p>
+            <p className="small">
+              <a
+                href={downloadUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="download"
+              >
+                Digital download instant access
+              </a>
+            </p>
           </div>
         </div>
         <section id="learn" className="details">
@@ -32,7 +43,7 @@ function App() {
         </section>
       </header>
     </div>
-  )
+  );
 }
 
 export default App;
