@@ -1,0 +1,8 @@
+title: book-page-foundations-of-wealth
+baseurl: ""
+url: ""
+markdown: kramdown
+theme: jekyll-theme-primer
+sass:
+  sass_dir: assets/css
+  style: style.scss
