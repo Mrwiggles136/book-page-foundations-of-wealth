@@ -2,6 +2,7 @@
   "name": "hello-github",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Mrwiggles136.github.io/book-page-foundations-of-wealth",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
