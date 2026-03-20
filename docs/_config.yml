@@ -1,0 +1,22 @@
+title: Foundations of Wealth
+description: Build financial wisdom for a prosperous life.
+theme: jekyll-theme-primer
+
+source: .
+destination: ./_site
+
+paginate: 5
+
+plugins:
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-github-metadata
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
