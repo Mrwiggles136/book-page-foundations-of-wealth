@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/book-page-foundations-of-wealth/static/css/main.21b423c7.css",
+    "main.css": "/book-page-foundations-of-wealth/static/css/main.773ff4aa.css",
     "main.js": "/book-page-foundations-of-wealth/static/js/main.9609650f.js",
     "static/js/453.dca33a62.chunk.js": "/book-page-foundations-of-wealth/static/js/453.dca33a62.chunk.js",
+    "static/media/book-cover.png": "/book-page-foundations-of-wealth/static/media/book-cover.19d376d708f16c59c0ca.png",
     "index.html": "/book-page-foundations-of-wealth/index.html",
-    "main.21b423c7.css.map": "/book-page-foundations-of-wealth/static/css/main.21b423c7.css.map",
+    "main.773ff4aa.css.map": "/book-page-foundations-of-wealth/static/css/main.773ff4aa.css.map",
     "main.9609650f.js.map": "/book-page-foundations-of-wealth/static/js/main.9609650f.js.map",
     "453.dca33a62.chunk.js.map": "/book-page-foundations-of-wealth/static/js/453.dca33a62.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.21b423c7.css",
+    "static/css/main.773ff4aa.css",
     "static/js/main.9609650f.js"
   ]
 }
