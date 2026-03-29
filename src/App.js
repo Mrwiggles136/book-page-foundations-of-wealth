@@ -11,7 +11,7 @@ function App() {
         <div className="hero">
           <div className="cover">
             <img src="/book-cover.png" alt="Foundations of Wealth book cover" />
-            <div className="price">$14.99<br />Foundations of Wealth<br />Buy now only!</div>
+            <div className="price">$5.99<br />Foundations of Wealth<br />Buy now only!</div>
           </div>
           <div className="pitch">
             <h1>Foundations Of Wealth</h1>
@@ -23,7 +23,7 @@ function App() {
               <li>Create lasting financial freedom for your family</li>
             </ul>
             <div className="cta-row">
-              <a href="#buy" className="btn primary">Buy now — $14.99</a>
+              <a href="#buy" className="btn primary">Buy now — $5.99</a>
             </div>
             <p className="small">
               <a
