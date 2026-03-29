@@ -10,7 +10,6 @@ function App() {
       <header className="App-header">
         <div className="hero">
           <div className="cover">
-            <img src="/book-cover.png" alt="Foundations of Wealth book cover" />
             <div className="price">$14.99<br />Foundations of Wealth<br />Buy now only!</div>
           </div>
           <div className="pitch">
