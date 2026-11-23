@@ -11,6 +11,7 @@
 /* Hero */
 .hero { display: flex; gap: 48px; align-items: center; }
 .cover { flex: 0 0 52%; }
+.cover picture { display: block; }
 .cover img {
   display: block; width: 100%; height: auto; border-radius: 8px;
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.75), 0 0 0 1px rgba(255, 216, 115, 0.15);
@@ -51,6 +52,8 @@ h1 { margin: 0 0 8px; color: #f5d08a; font-size: 2.6rem; line-height: 1.15; }
 }
 h2 { margin: 0 0 10px; color: #f5d08a; font-size: 1.5rem; }
 .details p, .author p { max-width: 720px; margin: 0; font-size: 1.05rem; }
+.details .bullets { max-width: 760px; margin-bottom: 0; }
+.details .bullets strong { color: #ffd873; }
 .author strong { color: #ffd873; }
 .closing { text-align: center; }
 .closing .buy { align-items: center; margin-top: 16px; }
