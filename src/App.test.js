@@ -1,8 +1,9 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('buy buttons link to the checkout', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const buttons = screen.getAllByRole('link', { name: /buy now/i });
+  expect(buttons.length).toBeGreaterThan(0);
+  buttons.forEach((b) => expect(b).toHaveAttribute('href', expect.stringContaining('paypal.com')));
 });

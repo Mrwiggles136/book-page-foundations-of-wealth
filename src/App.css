@@ -1,21 +1,72 @@
-.App{font-family:Inter,system-ui,Arial,sans-serif;color:#e6c36b;background:#0b0b0b;min-height:100vh}
-.App-header{max-width:1100px;margin:0 auto;padding:40px}
-.hero{display:flex;gap:32px;align-items:center;flex-wrap:wrap}
-.cover img{width:320px;height:auto;border-radius:6px;box-shadow:0 10px 30px rgba(0,0,0,0.7)}
-.cover{position:relative}
-.price{position:absolute;right:10px;bottom:8px;background:rgba(0,0,0,0.6);color:#ffd873;padding:8px 12px;border-radius:6px;font-weight:700;text-align:center}
-.pitch{flex:1;min-width:300px}
-.pitch h1{color:#f5d08a;font-size:2.4rem;margin:0 0 8px}
-.strap{color:#ffd873;font-weight:600;margin:0 0 12px}
-.emotional{color:#f1e6d0;font-size:1.05rem}
-.bullets{margin:16px 0 18px;padding-left:20px;color:#f6eddc}
-.bullets li{margin:8px 0}
-.cta-row{display:flex;gap:12px;margin:12px 0}
-.btn{padding:12px 18px;border-radius:8px;text-decoration:none;font-weight:700}
-.btn.primary{background:linear-gradient(90deg,#b8860b,#ffd873);color:#111}
-.btn.ghost{background:transparent;border:1px solid rgba(255,216,120,0.2);color:#ffd873}
-.small{color:#cbb78a;font-size:0.9rem;margin-top:8px}
-.download{color:#ffd873;text-decoration:none;font-weight:700}
-.download:hover{text-decoration:underline}
-.details{margin-top:28px;color:#e9dfc8}
-@media(max-width:780px){.hero{flex-direction:column}.cover img{width:70%}}
+.App {
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
+  color: #f1e6d0;
+  background: #0b0b0b;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+.page { max-width: 1100px; margin: 0 auto; padding: 48px 24px 32px; }
+
+/* Hero */
+.hero { display: flex; gap: 48px; align-items: center; }
+.cover { flex: 0 0 52%; }
+.cover img {
+  display: block; width: 100%; height: auto; border-radius: 8px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.75), 0 0 0 1px rgba(255, 216, 115, 0.15);
+}
+.pitch { flex: 1; min-width: 0; }
+
+.eyebrow {
+  margin: 0 0 6px; color: #cbb78a; font-size: 0.85rem;
+  letter-spacing: 0.14em; text-transform: uppercase;
+}
+h1 { margin: 0 0 8px; color: #f5d08a; font-size: 2.6rem; line-height: 1.15; }
+.strap { margin: 0 0 18px; color: #ffd873; font-size: 1.1rem; font-weight: 600; }
+.lead { margin: 0 0 18px; font-size: 1.05rem; }
+
+.bullets { list-style: none; margin: 0 0 26px; padding: 0; }
+.bullets li { position: relative; padding-left: 28px; margin: 10px 0; }
+.bullets li::before { content: '✔'; position: absolute; left: 0; color: #e6b84a; font-weight: 700; }
+
+/* Buy button */
+.buy { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
+.btn {
+  display: inline-block; padding: 14px 28px; border-radius: 8px;
+  font-size: 1.1rem; font-weight: 800; text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.btn.primary {
+  background: linear-gradient(90deg, #b8860b, #ffd873); color: #111;
+  box-shadow: 0 6px 18px rgba(230, 184, 74, 0.3);
+}
+.btn.primary:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(230, 184, 74, 0.45); }
+.btn.primary:focus-visible { outline: 3px solid #ffd873; outline-offset: 3px; }
+.download { color: #ffd873; font-size: 0.95rem; font-weight: 600; text-decoration: none; }
+.download:hover { text-decoration: underline; }
+
+/* Sections */
+.details, .author, .closing {
+  margin-top: 40px; padding-top: 28px; border-top: 1px solid rgba(255, 216, 115, 0.18);
+}
+h2 { margin: 0 0 10px; color: #f5d08a; font-size: 1.5rem; }
+.details p, .author p { max-width: 720px; margin: 0; font-size: 1.05rem; }
+.author strong { color: #ffd873; }
+.closing { text-align: center; }
+.closing .buy { align-items: center; margin-top: 16px; }
+
+.footer {
+  padding: 24px; text-align: center; color: #8f8166; font-size: 0.85rem;
+  border-top: 1px solid rgba(255, 216, 115, 0.1);
+}
+
+/* Phones and small tablets */
+@media (max-width: 820px) {
+  .page { padding: 28px 16px 24px; }
+  .hero { flex-direction: column; gap: 28px; }
+  .cover { flex-basis: auto; width: 100%; }
+  h1 { font-size: 2.1rem; }
+  .buy { align-items: stretch; width: 100%; }
+  .btn { text-align: center; }
+  .download { text-align: center; }
+}
